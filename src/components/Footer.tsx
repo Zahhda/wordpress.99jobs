@@ -50,7 +50,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50 space-y-1">
           <p>&copy; {new Date().getFullYear()} 99Jobs. All rights reserved.</p>
-          <p>Proudly powered by WordPress | Theme: Twenty Twenty-Two.</p>
+          <p>Astra</p>
         </div>
       </div>
     </footer>
