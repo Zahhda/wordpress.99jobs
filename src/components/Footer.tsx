@@ -1,4 +1,4 @@
-import logo from "@/assets/99jobs-logo.jpeg";
+﻿import logo from "@/assets/99jobs-logo.jpeg";
 
 const Footer = () => {
   return (
@@ -48,8 +48,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} 99Jobs. All rights reserved.
+        <div className="border-t border-primary-foreground/10 pt-6 text-center text-sm text-primary-foreground/50 space-y-1">
+          <p>&copy; {new Date().getFullYear()} 99Jobs. All rights reserved.</p>
+          <p>Proudly powered by WordPress | Theme: Twenty Twenty-Two.</p>
         </div>
       </div>
     </footer>
@@ -57,3 +58,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
