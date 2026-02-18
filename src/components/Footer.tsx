@@ -30,7 +30,7 @@ const Footer = () => {
                 { name: "Instagram", url: "#" },
                 { name: "LinkedIn", url: "#" },
                 { name: "YouTube", url: "#" },
-                { name: "WhatsApp", url: "#" },
+                { name: "WhatsApp", url: "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack." },
               ].map(s => (
                 <a
                   key={s.name}
