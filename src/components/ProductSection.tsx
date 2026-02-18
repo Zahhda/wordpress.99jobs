@@ -1,7 +1,7 @@
 import { FileText, Building2, GraduationCap, CheckCircle2 } from "lucide-react";
 
 const ProductSection = () => {
-  const WHATSAPP_URL = "https://wa.me/91919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
+  const WHATSAPP_URL = "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
 
   const features = [
     {

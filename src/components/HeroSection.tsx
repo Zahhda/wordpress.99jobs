@@ -1,7 +1,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
-  const WHATSAPP_URL = "https://wa.me/91919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
+  const WHATSAPP_URL = "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
 
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">

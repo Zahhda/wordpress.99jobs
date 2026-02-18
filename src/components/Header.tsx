@@ -1,7 +1,7 @@
 import logo from "@/assets/99jobs-logo.jpeg";
 
 const Header = () => {
-  const WHATSAPP_URL = "https://wa.me/91919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
+  const WHATSAPP_URL = "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
