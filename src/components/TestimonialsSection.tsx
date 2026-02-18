@@ -132,6 +132,11 @@ const TestimonialsSection = () => {
                     }}
                     className="w-full max-w-6xl mx-auto"
                 >
+                    <div className="flex justify-end gap-2 mb-4 md:hidden pr-2">
+                        <CarouselPrevious className="static translate-y-0 h-9 w-9 border-primary/20 hover:bg-secondary/10 hover:text-secondary hover:border-secondary" />
+                        <CarouselNext className="static translate-y-0 h-9 w-9 border-primary/20 hover:bg-secondary/10 hover:text-secondary hover:border-secondary" />
+                    </div>
+
                     <CarouselContent className="-ml-2 md:-ml-4">
                         {testimonials.map((item, idx) => (
                             <CarouselItem key={idx} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
