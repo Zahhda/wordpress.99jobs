@@ -10,6 +10,7 @@ const Header = () => {
           <img src={logo} alt="99Jobs Logo" className="h-10 md:h-12 w-auto" />
         </a>
 
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</a>
           <a href="#product" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">The 99 Pack</a>
@@ -21,7 +22,7 @@ const Header = () => {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-secondary text-secondary-foreground font-semibold text-sm px-5 py-2.5 rounded-lg hover:opacity-90 transition-opacity"
+          className="bg-secondary text-secondary-foreground font-semibold text-sm px-4 py-2 md:px-5 md:py-2.5 rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap"
         >
           Buy Now — ₹99
         </a>
