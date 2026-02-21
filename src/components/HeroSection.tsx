@@ -1,108 +1,60 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import { ArrowRight, CheckCircle2, Building2 } from "lucide-react";
-
-const companies = [
-  "Google", "Microsoft", "Amazon", "TCS", "Infosys",
-  "Wipro", "Accenture", "Cognizant", "IBM", "Tech Mahindra",
-];
 
 const HeroSection = () => {
   const WHATSAPP_URL = "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.";
 
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center pt-24 pb-12 overflow-hidden bg-slate-950">
-      {/* Dynamic Backgrounds */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 z-0" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-primary" />
       <div
-        className="absolute inset-0 opacity-10 mix-blend-overlay z-0"
+        className="absolute inset-0 opacity-20"
         style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center" }}
       />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/80 to-primary/95" />
 
-      {/* Animated Light Orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] z-0 animate-pulse" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-orange-500/20 rounded-full blur-[100px] z-0 animate-pulse delay-1000" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-primary/5 rounded-[100%] blur-[120px] z-0 pointer-events-none" />
-
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-8 flex flex-col items-center text-center">
-
-        {/* Trusted Badge */}
-        <div className="animate-slide-up inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700/50 shadow-lg mb-8 backdrop-blur-sm">
-          <div className="flex -space-x-2 mr-2">
-            {[1, 2, 3].map(i => (
-              <div key={i} className="w-6 h-6 rounded-full bg-orange-500 border-2 border-slate-800 flex items-center justify-center text-[10px] font-bold text-white shadow-sm">
-                {String.fromCharCode(64 + i)}
-              </div>
-            ))}
-          </div>
-          <span className="text-xs sm:text-sm font-semibold text-slate-300">
-            🚀 Join <span className="text-white font-bold">50,000+</span> candidates hired!
+      <div className="relative container mx-auto px-4 md:px-8 py-20 md:py-32">
+        <div className="max-w-3xl animate-slide-up">
+          <span className="inline-block bg-secondary/20 text-secondary-foreground border border-secondary/30 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+            🚀 Your Shortcut to a Career
           </span>
-        </div>
 
-        {/* Hero Copy */}
-        <div className="max-w-4xl mx-auto animate-slide-up" style={{ animationDelay: "100ms" }}>
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] mb-6 tracking-tight">
-            Get Hired by <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600 drop-shadow-sm">
-              Top Companies.
-            </span>
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6">
+            Unlock 1,000+ Premium Opportunities &{" "}
+            <span className="text-secondary">The Ultimate Job-Winner Kit.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-            India's most trusted career accelerator. Get ATS-proof resumes, hidden HR contact lists, and priority interview calls—start your journey for just <strong className="text-white">₹99</strong>.
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl leading-relaxed">
+            India's most trusted platform for students and job seekers. Get ATS-proof resumes, HR contact lists, and direct interview calls—all starting at just <strong className="text-secondary">₹99</strong>.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-lg mx-auto mb-16">
+          <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange-500 text-white font-bold text-lg px-8 py-4 sm:py-5 rounded-full hover:bg-orange-600 hover:scale-105 transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.4)] group whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-bold text-lg px-8 py-4 rounded-xl hover:opacity-90 transition-all shadow-lg hover:shadow-xl group"
             >
-              Get the ₹99 Pack
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Get the ₹99 Pack Now
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" /><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.122 1.525 5.857L.053 23.537l5.832-1.529A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82a9.8 9.8 0 01-5.008-1.373l-.36-.213-3.722.976.993-3.63-.235-.373A9.79 9.79 0 012.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z" /></svg>
             </a>
-
             <a
               href="#product"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800/80 text-white border border-slate-700 font-semibold text-lg px-8 py-4 sm:py-5 rounded-full hover:bg-slate-700 hover:text-white transition-all backdrop-blur-sm whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/30 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-xl hover:bg-primary-foreground/10 transition-all"
             >
-              See What's Inside
+              Learn More ↓
             </a>
           </div>
 
-          {/* Quick Benefits */}
-          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-sm font-medium text-slate-400 mb-16">
-            <span className="flex items-center gap-1.5 bg-slate-900/50 px-3 py-1.5 rounded-full border border-slate-800/50">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Instant Delivery
-            </span>
-            <span className="flex items-center gap-1.5 bg-slate-900/50 px-3 py-1.5 rounded-full border border-slate-800/50">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> WhatsApp Support
-            </span>
-            <span className="flex items-center gap-1.5 bg-slate-900/50 px-3 py-1.5 rounded-full border border-slate-800/50">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" /> Verified HR Scripts
-            </span>
-          </div>
-        </div>
-      </div>
-
-      {/* Infinite Carousel Slider (Companies) within Hero */}
-      <div className="relative mt-auto w-full border-t border-slate-800/50 bg-slate-900/40 backdrop-blur-sm py-5 overflow-hidden z-10">
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-950 to-transparent z-20 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-950 to-transparent z-20 pointer-events-none" />
-
-        <div className="container mx-auto px-4 flex items-center gap-6">
-          <span className="shrink-0 text-slate-500 font-bold uppercase tracking-widest text-xs sm:text-sm flex items-center gap-2">
-            <Building2 className="w-4 h-4" /> Hiring Partners
-          </span>
-          <div className="flex w-full overflow-hidden opacity-60">
-            <div className="flex animate-marquee whitespace-nowrap gap-12 items-center">
-              {[...companies, ...companies, ...companies].map((company, index) => (
-                <div key={index} className="text-xl sm:text-2xl font-black font-heading text-slate-300 tracking-tight opacity-70 hover:opacity-100 transition-opacity">
-                  {company}
+          <div className="flex items-center gap-6 mt-10 text-primary-foreground/70">
+            <div className="flex -space-x-2">
+              {[1, 2, 3, 4].map(i => (
+                <div key={i} className="w-8 h-8 rounded-full bg-secondary/60 border-2 border-primary flex items-center justify-center text-xs font-bold text-primary-foreground shadow-sm">
+                  {String.fromCharCode(64 + i)}
                 </div>
               ))}
             </div>
+            <p className="text-sm">Trusted by <strong className="text-primary-foreground">50,000+</strong> Job Seekers</p>
           </div>
         </div>
       </div>
