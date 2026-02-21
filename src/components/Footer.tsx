@@ -1,4 +1,5 @@
 ﻿import logo from "@/assets/99jobs-logo.jpeg";
+import { Instagram, Linkedin, Youtube, MessageCircle, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -25,19 +26,22 @@ const Footer = () => {
 
           <div>
             <h4 className="font-heading font-bold mb-4">Connect With Us</h4>
-            <div className="flex gap-3 mb-4">
+            <div className="flex gap-4 mb-6">
               {[
-                { name: "Instagram", url: "#" },
-                { name: "LinkedIn", url: "#" },
-                { name: "YouTube", url: "#" },
-                { name: "WhatsApp", url: "https://wa.me/9251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack." },
+                { name: "Instagram", url: "#", icon: Instagram },
+                { name: "LinkedIn", url: "#", icon: Linkedin },
+                { name: "YouTube", url: "#", icon: Youtube },
+                { name: "WhatsApp", url: "https://wa.me/919251271208?text=Hi%2099Jobs%2C%20I%20want%20the%20%E2%82%B999%20Pack.", icon: MessageCircle },
               ].map(s => (
                 <a
                   key={s.name}
                   href={s.url}
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/70 hover:bg-primary-foreground/20 hover:text-primary-foreground transition-colors text-xs font-bold"
+                  title={s.name}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground hover:bg-white hover:text-primary transition-all duration-300 hover:scale-110 shadow-lg"
                 >
-                  {s.name[0]}
+                  <s.icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
